@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dream Craft Events — premium wedding, birthday and celebration event services in Pazhayangadi, Kannur.">
+<title>Dream Craft Events | Celebrate Beautifully</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#080A0F',
+        panel: '#10141D',
+        gold: '#D8B45A',
+        cream: '#F7F1E5'
+      },
+      fontFamily: {
+        sans: ['DM Sans', 'sans-serif'],
+        display: ['Playfair Display', 'serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080A0F;
+}
+
+.hero-bg {
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(216,180,90,.20),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at 15% 70%,
+      rgba(125,70,180,.12),
+      transparent 28%
+    ),
+    linear-gradient(
+      180deg,
+      #080A0F 0%,
+      #0B0E15 55%,
+      #080A0F 100%
+    );
+}
+
+.glass {
+  background: rgba(16,20,29,.72);
+  backdrop-filter: blur(18px);
+}
+
+.gold-text {
+  background:
+    linear-gradient(
+      90deg,
+      #D8B45A,
+      #FFF0B5,
+      #B8862D
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card {
+  transition:
+    transform .35s ease,
+    border-color .35s ease,
+    box-shadow .35s ease;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(216,180,90,.55);
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.35);
+}
+
+.service-img {
+  transition: transform .5s ease;
+}
+
+.card:hover .service-img {
+  transform: scale(1.07);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all .7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+</style>
+</head>
+
+<body class="text-white font-sans">
+
+<!-- ANNOUNCEMENT BAR -->
+
+<div class="bg-gold text-black text-center text-xs sm:text-sm font-bold py-2 px-4">
+
+  ✨ BOOKINGS OPEN • Weddings • Birthdays • Engagements • Parties • Kannur
+
+</div>
+
+
+<!-- NAVIGATION -->
+
+<header class="sticky top-0 z-50 glass border-b border-white/10">
+
+  <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+
+    <a href="#" class="flex items-center gap-3">
+
+      <div class="w-11 h-11 rounded-full border border-gold/60 flex items-center justify-center bg-black/30">
+
+        <i class="fa-solid fa-wand-magic-sparkles text-gold"></i>
+
+      </div>
+
+      <div>
+
+        <div class="font-display text-xl tracking-wide gold-text">
+          DREAM CRAFT
+        </div>
+
+        <div class="text-[9px] tracking-[.28em] text-gray-400 uppercase">
+          Event Management
+        </div>
+
+      </div>
+
+    </a>
+
+
+    <!-- DESKTOP MENU -->
+
+    <nav class="hidden md:flex gap-7 text-sm text-gray-300">
+
+      <a class="hover:text-gold" href="#services">
+        Services
+      </a>
+
+      <a class="hover:text-gold" href="#work">
+        Our Work
+      </a>
+
+      <a class="hover:text-gold" href="#about">
+        About
+      </a>
+
+      <a class="hover:text-gold" href="#contact">
+        Contact
+      </a>
+
+    </nav>
+
+
+    <!-- DESKTOP BUTTONS -->
+
+    <div class="hidden sm:flex items-center gap-2">
+
+      <a
+        aria-label="Instagram"
+        target="_blank"
+        rel="noopener"
+        href="https://instagram.com/dream_craft_event_managment"
+        class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:text-pink-400">
+
+        <i class="fa-brands fa-instagram"></i>
+
+      </a>
+
+
+      <a
+        href="tel:+917902919484"
+        class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:text-gold">
+
+        <i class="fa-solid fa-phone"></i>
+
+      </a>
+
+
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20would%20like%20to%20book%20an%20event."
+        class="ml-1 px-5 py-2.5 rounded-full bg-gold text-black font-bold text-sm hover:bg-[#e6c878]">
+
+        <i class="fa-brands fa-whatsapp mr-1"></i>
+
+        WhatsApp
+
+      </a>
+
+    </div>
+
+
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+      id="menuBtn"
+      class="md:hidden text-xl p-2"
+      aria-label="Open menu">
+
+      <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+  </div>
+
+
+  <!-- MOBILE MENU -->
+
+  <div
+    id="mobileMenu"
+    class="hidden md:hidden border-t border-white/10 bg-panel px-5 py-5">
+
+    <div class="flex flex-col gap-4 text-gray-300">
+
+      <a href="#services">
+        Services
+      </a>
+
+      <a href="#work">
+        Our Work
+      </a>
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/917902919484"
+        class="text-center bg-gold text-black rounded-xl py-3 font-bold">
+
+        Chat on WhatsApp
+
+      </a>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+<!-- HERO -->
+
+<section
+  class="hero-bg min-h-[calc(100vh-88px)] flex items-center relative overflow-hidden">
+
+  <div
+    class="absolute inset-0 opacity-20"
+    style="
+      background-image:
+      radial-gradient(#D8B45A 1px,transparent 1px);
+      background-size:34px 34px;
+    ">
+  </div>
+
+
+  <div class="relative max-w-6xl mx-auto px-5 py-24 text-center">
+
+    <div
+      class="inline-flex items-center gap-2 border border-gold/30 bg-gold/10 rounded-full px-4 py-2 text-xs font-semibold tracking-widest uppercase text-gold mb-7">
+
+      <i class="fa-solid fa-location-dot"></i>
+
+      Pazhayangadi • Kannur
+
+    </div>
+
+
+    <h1
+      class="font-display text-5xl sm:text-7xl lg:text-8xl leading-[1.03] mb-7">
+
+      Moments made
+
+      <br>
+
+      <span class="gold-text italic">
+        magnificent.
+      </span>
+
+    </h1>
+
+
+    <p
+      class="max-w-2xl mx-auto text-gray-400 text-base sm:text-lg leading-8 mb-9">
+
+      From elegant wedding stages to unforgettable birthday setups,
+      custom cakes, hampers, photography and sound —
+      we craft celebrations people remember.
+
+    </p>
+
+
+    <div class="flex flex-col sm:flex-row justify-center gap-3">
+
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20plan%20an%20event."
+        class="px-8 py-4 rounded-full bg-gold text-black font-extrabold hover:scale-[1.03] transition">
+
+        <i class="fa-brands fa-whatsapp mr-2"></i>
+
+        Plan My Event
+
+      </a>
+
+
+      <a
+        href="#services"
+        class="px-8 py-4 rounded-full border border-white/15 bg-white/5 font-semibold hover:bg-white/10 transition">
+
+        Explore Services
+
+        <i class="fa-solid fa-arrow-down ml-2"></i>
+
+      </a>
+
+    </div>
+
+
+    <!-- QUICK SERVICES -->
+
+    <div
+      class="max-w-4xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-4 gap-3">
+
+
+      <div class="glass border border-white/10 rounded-2xl p-5">
+
+        <div class="text-gold text-2xl mb-1">
+
+          <i class="fa-solid fa-heart"></i>
+
+        </div>
+
+        <div class="font-bold">
+          Weddings
+        </div>
+
+        <div class="text-xs text-gray-500 mt-1">
+          Elegant setups
+        </div>
+
+      </div>
+
+
+      <div class="glass border border-white/10 rounded-2xl p-5">
+
+        <div class="text-gold text-2xl mb-1">
+
+          <i class="fa-solid fa-cake-candles"></i>
+
+        </div>
+
+        <div class="font-bold">
+          Birthdays
+        </div>
+
+        <div class="text-xs text-gray-500 mt-1">
+          Creative themes
+        </div>
+
+      </div>
+
+
+      <div class="glass border border-white/10 rounded-2xl p-5">
+
+        <div class="text-gold text-2xl mb-1">
+
+          <i class="fa-solid fa-camera"></i>
+
+        </div>
+
+        <div class="font-bold">
+          Photography
+        </div>
+
+        <div class="text-xs text-gray-500 mt-1">
+          Capture memories
+        </div>
+
+      </div>
+
+
+      <div class="glass border border-white/10 rounded-2xl p-5">
+
+        <div class="text-gold text-2xl mb-1">
+
+          <i class="fa-solid fa-music"></i>
+
+        </div>
+
+        <div class="font-bold">
+          Sound & Lights
+        </div>
+
+        <div class="text-xs text-gray-500 mt-1">
+          Complete production
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services" class="py-24 bg-[#0B0E15]">
+
+  <div class="max-w-7xl mx-auto px-5">
+
+
+    <div class="max-w-2xl mb-14 reveal">
+
+      <p class="text-gold uppercase tracking-[.25em] text-xs font-bold">
+        What we create
+      </p>
+
+      <h2 class="font-display text-4xl sm:text-5xl mt-3">
+
+        One team.
+
+        <span class="gold-text">
+          Every detail.
+        </span>
+
+      </h2>
+
+      <p class="text-gray-400 mt-4 leading-7">
+
+        Choose a single service or let us coordinate
+        the complete celebration.
+
+      </p>
+
+    </div>
+
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+
+      <!-- SERVICE 1 -->
+
+      <article
+        class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel">
+
+        <div class="h-52 overflow-hidden">
+
+          <img
+            class="service-img w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1000&q=85"
+            alt="Wedding stage decoration"
+            loading="lazy">
+
+        </div>
+
+        <div class="p-6">
+
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">
+            01 • Decor
+          </p>
+
+          <h3 class="font-display text-2xl mt-2">
+            Wedding & Engagement
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-6 mt-2">
+
+            Stage styling, floral backdrops,
+            entrance concepts, seating and venue decor.
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 2 -->
+
+      <article
+        class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel">
+
+        <div class="h-52 overflow-hidden">
+
+          <img
+            class="service-img w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1000&q=85"
+            alt="Birthday balloon decoration"
+            loading="lazy">
+
+        </div>
+
+        <div class="p-6">
+
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">
+            02 • Celebrations
+          </p>
+
+          <h3 class="font-display text-2xl mt-2">
+            Birthday & Balloon
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-6 mt-2">
+
+            Theme parties, balloon arches,
+            custom backdrops, props and cake table styling.
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 3 -->
+
+      <article
+        class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel">
+
+        <div class="h-52 overflow-hidden">
+
+          <img
+            class="service-img w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=1000&q=85"
+            alt="Stage lighting and sound"
+            loading="lazy">
+
+        </div>
+
+        <div class="p-6">
+
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">
+            03 • Production
+          </p>
+
+          <h3 class="font-display text-2xl mt-2">
+            Lights & Sounds
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-6 mt-2">
+
+            PA systems, truss stages,
+            dynamic lighting and event sound production.
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 4 -->
+
+      <article
+        class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel">
+
+        <div class="h-52 overflow-hidden">
+
+          <img
+            class="service-img w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=1000&q=85"
+            alt="Chocolate gift hamper"
+            loading="lazy">
+
+        </div>
+
+        <div class="p-6">
+
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">
+            04 • Gifts
+          </p>
+
+          <h3 class="font-display text-2xl mt-2">
+            Custom Hampers
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-6 mt-2">
+
+            Personalized chocolate hampers,
+            ribbons, cards and presentation for special occasions.
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 5 -->
+
+      <article
+        class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel">
+
+        <div class="h-52 overflow-hidden">
+
+          <img
+            class="service-img w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1000&q=85"
+            alt="Designer celebration cake"
+            loading="lazy">
+
+        </div>
+
+        <div class="p-6">
+
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">
+            05 • Cakes
+          </p>
+
+          <h3 class="font-display text-2xl mt-2">
+            Designer Cakes
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-6 mt-2">
+
+            Theme cakes, chocolate cakes,
+            berry cakes and celebration desserts.
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- SERVICE 6 -->
+
+      <article
+        class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel">
+
+        <div class="h-52 overflow-hidden">
+
+          <img
+            class="service-img w-full h-full object-cover"
+            src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1000&q=85"
+            alt="Wedding photography"
+            loading="lazy">
+
+        </div>
+
+        <div class="p-6">
+
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">
+            06 • Memories
+          </p>
+
+          <h3 class="font-display text-2xl mt-2">
+            Photo & Video
+          </h3>
+
+          <p class="text-gray-400 text-sm leading-6 mt-2">
+
+            Candid photography,
+            cinematic videos, highlight reels and event coverage.
+
+          </p>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="py-20 px-5">
+
+  <div
+    class="max-w-6xl mx-auto rounded-[2rem] overflow-hidden relative border border-gold/20 bg-gradient-to-br from-[#18150F] via-panel to-[#0E1118] p-10 sm:p-16 text-center">
+
+    <div
+      class="absolute -top-32 left-1/2 -translate-x-1/2 w-80 h-80 bg-gold/15 blur-[90px] rounded-full">
+    </div>
+
+
+    <div class="relative">
+
+      <p class="text-gold text-xs uppercase tracking-[.3em] font-bold">
+
+        Your idea. Our craft.
+
+      </p>
+
+
+      <h2 class="font-display text-4xl sm:text-6xl mt-4">
+
+        Let's make your next
+
+        <br>
+
+        <span class="gold-text italic">
+          celebration special.
+        </span>
+
+      </h2>
+
+
+      <p class="text-gray-400 max-w-xl mx-auto mt-5 mb-8">
+
+        Tell us your date, event type and vision.
+        We'll help you plan the right setup.
+
+      </p>
+
+
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20would%20like%20an%20event%20quotation."
+        class="inline-flex items-center gap-2 bg-gold text-black font-extrabold px-8 py-4 rounded-full hover:bg-[#e6c878]">
+
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+
+        Get a Quote
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- INSTAGRAM -->
+
+<section id="work" class="py-24 bg-[#0B0E15]">
+
+  <div class="max-w-7xl mx-auto px-5">
+
+
+    <div
+      class="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-10 reveal">
+
+      <div>
+
+        <p class="text-pink-400 text-xs uppercase tracking-[.25em] font-bold">
+
+          <i class="fa-brands fa-instagram mr-1"></i>
+
+          Instagram
+
+        </p>
+
+        <h2 class="font-display text-4xl mt-2">
+          Follow the journey
+        </h2>
+
+      </div>
+
+
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://instagram.com/dream_craft_event_managment"
+        class="text-sm text-gold font-bold hover:underline">
+
+        @dream_craft_event_managment ↗
+
+      </a>
+
+    </div>
+
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+
+      <img
+        class="rounded-2xl aspect-square object-cover reveal"
+        src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=85"
+        alt="Event decoration"
+        loading="lazy">
+
+
+      <img
+        class="rounded-2xl aspect-square object-cover reveal"
+        src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=700&q=85"
+        alt="Wedding setup"
+        loading="lazy">
+
+
+      <img
+        class="rounded-2xl aspect-square object-cover reveal"
+        src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=700&q=85"
+        alt="Wedding celebration"
+        loading="lazy">
+
+
+      <img
+        class="rounded-2xl aspect-square object-cover reveal"
+        src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=85"
+        alt="Party decoration"
+        loading="lazy">
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT + CONTACT -->
+
+<section id="about" class="py-24">
+
+  <div
+    class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-start">
+
+
+    <!-- ABOUT -->
+
+    <div class="reveal">
+
+      <p class="text-gold text-xs uppercase tracking-[.25em] font-bold">
+        About Dream Craft
+      </p>
+
+
+      <h2 class="font-display text-4xl sm:text-5xl mt-3">
+
+        Local service.
+
+        <br>
+
+        <span class="gold-text">
+          Premium presentation.
+        </span>
+
+      </h2>
+
+
+      <p class="text-gray-400 leading-7 mt-6">
+
+        Based in Pazhayangadi, Kannur,
+        Dream Craft Events brings together decoration,
+        entertainment, gifting, cakes, photography and
+        event support under one roof.
+
+      </p>
+
+
+      <div class="grid grid-cols-2 gap-4 mt-8">
+
+
+        <div class="border border-white/10 rounded-2xl p-5 bg-panel">
+
+          <i class="fa-regular fa-clock text-gold mb-3"></i>
+
+          <div class="font-bold">
+            10 AM – 10 PM
+          </div>
+
+          <div class="text-xs text-gray-500 mt-1">
+            Daily
+          </div>
+
+        </div>
+
+
+        <div class="border border-white/10 rounded-2xl p-5 bg-panel">
+
+          <i class="fa-solid fa-location-dot text-gold mb-3"></i>
+
+          <div class="font-bold">
+            Pazhayangadi
+          </div>
+
+          <div class="text-xs text-gray-500 mt-1">
+            Kannur, Kerala
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTACT -->
+
+    <div id="contact" class="reveal">
+
+      <div
+        class="rounded-3xl border border-white/10 bg-panel p-7 sm:p-9">
+
+
+        <p class="text-gold text-xs uppercase tracking-[.25em] font-bold">
+          Contact
+        </p>
+
+
+        <h3 class="font-display text-3xl mt-2 mb-7">
+          Start planning today
+        </h3>
+
+
+        <div class="space-y-3">
+
+
+          <!-- PHONE -->
+
+          <a
+            href="tel:+917902919484"
+            class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-gold/40">
+
+            <span
+              class="w-11 h-11 rounded-xl bg-gold/10 text-gold flex items-center justify-center">
+
+              <i class="fa-solid fa-phone"></i>
+
+            </span>
+
+            <span>
+
+              <small class="text-gray-500 block">
+                Call
+              </small>
+
+              <b>
+                +91 79029 19484
+              </b>
+
+            </span>
+
+          </a>
+
+
+          <!-- ALTERNATE -->
+
+          <a
+            href="tel:+919562046506"
+            class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-gold/40">
+
+            <span
+              class="w-11 h-11 rounded-xl bg-gold/10 text-gold flex items-center justify-center">
+
+              <i class="fa-solid fa-phone"></i>
+
+            </span>
+
+            <span>
+
+              <small class="text-gray-500 block">
+                Alternate
+              </small>
+
+              <b>
+                +91 95620 46506
+              </b>
+
+            </span>
+
+          </a>
+
+
+          <!-- WHATSAPP -->
+
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://wa.me/917902919484"
+            class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-emerald-400/40">
+
+            <span
+              class="w-11 h-11 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+
+              <i class="fa-brands fa-whatsapp"></i>
+
+            </span>
+
+            <span>
+
+              <small class="text-gray-500 block">
+                WhatsApp
+              </small>
+
+              <b>
+                Chat with Dream Craft
+              </b>
+
+            </span>
+
+          </a>
+
+
+          <!-- EMAIL -->
+
+          <a
+            href="mailto:dreamcrafteventskannur@gmail.com"
+            class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-gold/40">
+
+            <span
+              class="w-11 h-11 rounded-xl bg-gold/10 text-gold flex items-center justify-center">
+
+              <i class="fa-solid fa-envelope"></i>
+
+            </span>
+
+            <span>
+
+              <small class="text-gray-500 block">
+                Email
+              </small>
+
+              <b class="break-all">
+                dreamcrafteventskannur@gmail.com
+              </b>
+
+            </span>
+
+          </a>
+
+
+        </div>
+
+
+        <!-- MAP -->
+
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://maps.app.goo.gl/djH7cYEaoNJGghNJ6"
+          class="mt-5 block text-center border border-gold/30 text-gold rounded-xl py-3 font-bold text-sm hover:bg-gold hover:text-black transition">
+
+          <i class="fa-solid fa-diamond-turn-right mr-1"></i>
+
+          Get Directions
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="border-t border-white/10 py-9 bg-black/30">
+
+  <div
+    class="max-w-7xl mx-auto px-5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+
+    <div>
+
+      © 2026 Dream Craft Events
+      • Pazhayangadi, Kannur
+
+    </div>
+
+
+    <a
+      target="_blank"
+      rel="noopener"
+      href="https://instagram.com/dream_craft_event_managment"
+      class="text-pink-400">
+
+      @dream_craft_event_managment
+
+    </a>
+
+  </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+const menuBtn =
+  document.getElementById('menuBtn');
+
+const mobileMenu =
+  document.getElementById('mobileMenu');
+
+
+menuBtn.addEventListener('click', () => {
+
+  mobileMenu.classList.toggle('hidden');
+
+});
+
+
+mobileMenu
+  .querySelectorAll('a')
+  .forEach(a => {
+
+    a.addEventListener('click', () => {
+
+      mobileMenu.classList.add('hidden');
+
+    });
+
+  });
+
+
+const observer =
+  new IntersectionObserver(
+    entries => {
+
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+          entry.target.classList.add('show');
+
+        }
+
+      });
+
+    },
+    {
+      threshold: .12
+    }
+  );
+
+
+document
+  .querySelectorAll('.reveal')
+  .forEach(el => {
+
+    observer.observe(el);
+
+  });
+
+</script>
+
+</body>
+  </html>
