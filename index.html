@@ -1214,6 +1214,65 @@ document
   });
 
 </script>
+  <!-- BOTTOM RIGHT SOCIAL BUTTONS -->
+
+<div class="fixed right-4 bottom-6 z-[100] flex flex-col gap-3">
+
+  <!-- WhatsApp -->
+  <a
+    href="https://wa.me/917902919484"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+    class="glass-social">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Instagram -->
+  <a
+    href="https://www.instagram.com/dream_craft_event_management_/"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    class="glass-social">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+</div>
+
+<style>
+.glass-social {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  color: white;
+  font-size: 23px;
+
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+
+  border: 1px solid rgba(255,255,255,0.22);
+
+  box-shadow:
+    inset 0 1px 1px rgba(255,255,255,0.3),
+    0 8px 30px rgba(0,0,0,0.35);
+
+  transition: all 0.3s ease;
+}
+
+.glass-social:hover {
+  transform: scale(1.08) translateX(-3px);
+  border-color: rgba(255,255,255,0.45);
+}
+</style>
 
 </body>
   </html>
