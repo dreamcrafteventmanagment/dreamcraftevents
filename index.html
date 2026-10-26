@@ -1393,5 +1393,39 @@ document
 <!-- END TOURS & TRAVELS -->
 
 
+<!-- SMALL AD-STYLE TRAVEL POPUP -->
+  <div id="travelPosterPopup" style="
+    position:fixed;
+    right:15px;
+    bottom:100px;
+    width:260px;
+    max-width:calc(100vw - 30px);
+    background:#fff;
+    border-radius:12px;
+    padding:8px;
+    box-shadow:0 5px 25px     rgba(0,0,0,.35);
+  z-index:9999;
+">
+  <button onclick="document.getElementById('travelPosterPopup').remove()"
+    style="
+      position:absolute;
+      top:12px;
+      right:12px;
+      width:28px;
+      height:28px;
+      border:0;
+      border-radius:50%;
+      background:#222;
+      color:white;
+      font-size:21px;
+      cursor:pointer;
+    ">&times;</button>
+
+  <img src="dream-love-poster.jpg"
+    alt="Dream Love Holidays"
+    style="width:100%;display:block;border-radius:8px;">
+</div>
+
+
 </body>
   </html>
