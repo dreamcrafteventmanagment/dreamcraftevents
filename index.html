@@ -150,13 +150,43 @@ body {
 
 <body class="text-white font-sans">
 
-<!-- ANNOUNCEMENT BAR -->
 
-<div class="glass text-white text-center text-xs sm:text-sm font-bold py-3 px-4 border-b border-white/10">
-
-  ✨ BOOKINGS OPEN • Weddings • Birthdays • Engagements • Parties • Kannur
-
+<!-- ROTATING TOP ANNOUNCEMENT BAR -->
+<div id="announcementBar"
+     class="text-center px-3 py-4"
+     style="background:linear-gradient(120deg,#171923,#242632);
+            border:1px solid rgba(212,175,90,.25);
+            color:white;font-weight:600;">
+  <div id="announcementText">
+    ✨ BOOKINGS OPEN • Weddings • Birthdays • Engagements • Parties • Kannur
+  </div>
 </div>
+
+<script>
+const announcements = [
+  "✨ BOOKINGS OPEN • Weddings • Birthdays • Engagements • Parties • Kannur",
+  "✈️ DREAM LOVE HOLIDAYS • Tour Packages • Travel Bookings"
+];
+
+let announcementIndex = 0;
+
+setInterval(() => {
+  announcementIndex = (announcementIndex + 1) % announcements.length;
+
+  const bar = document.getElementById("announcementText");
+
+  bar.style.opacity = "0";
+
+  setTimeout(() => {
+    bar.textContent = announcements[announcementIndex];
+    bar.style.opacity = "1";
+  }, 300);
+}, 3000);
+
+document.getElementById("announcementText").style.transition =
+  "opacity 0.3s ease";
+</script>
+
 
 
 <!-- NAVIGATION -->
