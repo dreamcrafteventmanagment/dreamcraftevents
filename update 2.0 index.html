@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dream Craft Events | Celebrate Beautifully</title>
+<meta name="description" content="Dream Craft Events — premium wedding, birthday and celebration event services in Pazhayangadi, Kannur.">
+<meta name="theme-color" content="#080A0F">
+
+<!-- Social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dream Craft Events | Celebrate Beautifully">
+<meta property="og:description" content="Wedding stages, birthday setups, cakes, hampers, photography, sound and lights in Pazhayangadi, Kannur.">
+<meta property="og:image" content="logo.png">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
+<!-- Local business info for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EventPlanner",
+  "name": "Dream Craft Events",
+  "description": "Wedding, birthday and celebration event management in Pazhayangadi, Kannur.",
+  "image": "logo.png",
+  "telephone": "+917902919484",
+  "email": "dreamcrafteventskannur@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pazhayangadi, Kannur",
+    "addressRegion": "Kerala",
+    "addressCountry": "IN"
+  },
+  "openingHours": "Mo-Su 10:00-22:00",
+  "sameAs": [
+    "https://www.instagram.com/dream_craft_event_management_/"
+  ]
+}
+</script>
+
+<script>document.documentElement.classList.add('js');</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        ink: '#080A0F',
+        panel: '#10141D',
+        gold: '#D8B45A',
+        cream: '#F7F1E5'
+      },
+      fontFamily: {
+        sans: ['DM Sans', 'sans-serif'],
+        display: ['Playfair Display', 'serif']
+      }
+    }
+  }
+}
+</script>
+
+<style>
+html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 92px; }
+body { background: #080A0F; -webkit-font-smoothing: antialiased; }
+
+.hero-bg {
+  background:
+    radial-gradient(circle at 50% 15%, rgba(216,180,90,.20), transparent 32%),
+    radial-gradient(circle at 15% 70%, rgba(125,70,180,.12), transparent 28%),
+    linear-gradient(180deg, #080A0F 0%, #0B0E15 55%, #080A0F 100%);
+}
+
+/* ===== iOS-style Liquid Glass ===== */
+.glass {
+  background: linear-gradient(135deg, rgba(255,255,255,.17) 0%, rgba(255,255,255,.06) 45%, rgba(255,255,255,.10) 100%);
+  backdrop-filter: blur(22px) saturate(190%) brightness(1.08);
+  -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.08);
+  border: 1px solid rgba(255,255,255,.24);
+  box-shadow:
+    inset 0 1.5px 1px rgba(255,255,255,.55),
+    inset 0 -1.5px 2px rgba(255,255,255,.14),
+    inset 0 0 24px rgba(255,255,255,.06),
+    0 12px 40px rgba(0,0,0,.38);
+  position: relative;
+  overflow: hidden;
+  transition: transform .55s cubic-bezier(.34,1.56,.64,1), box-shadow .3s ease, border-color .3s ease;
+}
+/* top specular highlight */
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.26) 0%, rgba(255,255,255,.05) 36%, transparent 58%),
+    radial-gradient(120% 80% at 0% 0%, rgba(255,255,255,.18), transparent 55%);
+  pointer-events: none;
+}
+/* light that follows the finger / cursor */
+.glass::after, .liquid-row::after, .glass-social::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle 110px at var(--mx, 50%) var(--my, 0%), rgba(255,255,255,.30), transparent 70%);
+  opacity: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+}
+.glass:hover::after, .liquid-row:hover::after, .glass-social:hover::after { opacity: 1; }
+a.glass:active, button.glass:active, .glass-social:active, .liquid-row:active { transform: scale(.95); }
+
+.gold-text {
+  background: linear-gradient(90deg, #D8B45A, #FFF0B5, #B8862D);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card { transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease; }
+.card:hover, .card:focus-within {
+  transform: translateY(-7px);
+  border-color: rgba(216,180,90,.55);
+  box-shadow: 0 20px 55px rgba(0,0,0,.35);
+}
+.service-img { transition: transform .5s ease; }
+.card:hover .service-img { transform: scale(1.07); }
+
+/* Reveal animation (content stays visible if JS is off) */
+.js .reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+.js .reveal.show { opacity: 1; transform: none; }
+
+/* Floating buttons */
+.glass-social {
+  position: relative; overflow: hidden;
+  width: 54px; height: 54px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 20px;
+  color: #fff; font-size: 23px;
+  background: linear-gradient(135deg, rgba(255,255,255,.20), rgba(255,255,255,.06) 55%, rgba(255,255,255,.12));
+  backdrop-filter: blur(22px) saturate(190%) brightness(1.1);
+  -webkit-backdrop-filter: blur(22px) saturate(190%) brightness(1.1);
+  border: 1px solid rgba(255,255,255,.26);
+  box-shadow:
+    inset 0 1.5px 1px rgba(255,255,255,.6),
+    inset 0 -1.5px 2px rgba(255,255,255,.14),
+    0 10px 30px rgba(0,0,0,.4);
+  transition: transform .55s cubic-bezier(.34,1.56,.64,1), border-color .3s ease;
+}
+.glass-social:hover { transform: scale(1.1) translateX(-3px); border-color: rgba(255,255,255,.5); }
+
+/* Contact rows: liquid glass */
+#contact a.liquid-row {
+  position: relative; overflow: hidden;
+  background: linear-gradient(135deg, rgba(255,255,255,.12), rgba(255,255,255,.035) 55%, rgba(255,255,255,.07));
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255,255,255,.16);
+  box-shadow: inset 0 1.5px 1px rgba(255,255,255,.35), inset 0 -1px 2px rgba(255,255,255,.08), 0 8px 24px rgba(0,0,0,.28);
+  transition: transform .55s cubic-bezier(.34,1.56,.64,1), border-color .3s ease, box-shadow .3s ease;
+}
+#contact a.liquid-row:hover {
+  transform: translateY(-2px) scale(1.015);
+  border-color: rgba(216,180,90,.5);
+}
+
+/* Poster popup */
+.poster-pop {
+  position: fixed; left: 14px; bottom: 18px; z-index: 90;
+  width: 210px; max-width: calc(100vw - 96px);
+  padding: 7px; border-radius: 28px;
+  background: linear-gradient(135deg, rgba(255,255,255,.28), rgba(255,255,255,.08) 55%, rgba(255,255,255,.18));
+  backdrop-filter: blur(24px) saturate(200%) brightness(1.1);
+  -webkit-backdrop-filter: blur(24px) saturate(200%) brightness(1.1);
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow:
+    inset 0 1.5px 1px rgba(255,255,255,.7),
+    inset 0 -1.5px 2px rgba(255,255,255,.18),
+    0 18px 50px rgba(0,0,0,.5);
+  opacity: 0; transform: translateY(60px) scale(.82); pointer-events: none;
+  transition: opacity .5s ease, transform .8s cubic-bezier(.34,1.56,.64,1);
+}
+.poster-pop.show { opacity: 1; transform: none; pointer-events: auto; }
+.poster-pop.show.float { animation: posterFloat 5s ease-in-out 1s infinite; }
+@keyframes posterFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.poster-pop img { width: 100%; display: block; border-radius: 21px; }
+.poster-close {
+  position: absolute; top: -10px; right: -10px; width: 32px; height: 32px;
+  border-radius: 50%; border: 1px solid rgba(255,255,255,.4);
+  background: rgba(20,22,30,.7);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+  color: #fff; font-size: 20px; line-height: 1; cursor: pointer; z-index: 2;
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.4), 0 4px 12px rgba(0,0,0,.4);
+  transition: transform .4s cubic-bezier(.34,1.56,.64,1);
+}
+.poster-close:active { transform: scale(.85); }
+.poster-fallback {
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  padding: 26px 14px 20px; border-radius: 21px; text-align: center; color: #fff;
+  background: linear-gradient(160deg, rgba(56,189,248,.35), rgba(8,10,15,.55));
+}
+.poster-fallback[hidden] { display: none; }
+
+/* Redirect animation */
+.go-veil {
+  position: fixed; inset: 0; z-index: 300;
+  background: rgba(8,10,15,.35);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  opacity: 0; pointer-events: none; transition: opacity .35s ease;
+}
+.go-veil.show { opacity: 1; pointer-events: auto; }
+.go-toast {
+  position: fixed; left: 50%; top: 50%; z-index: 301;
+  min-width: 220px; padding: 26px 30px 22px; border-radius: 32px;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+  background: linear-gradient(135deg, rgba(255,255,255,.26), rgba(255,255,255,.08) 55%, rgba(255,255,255,.16));
+  backdrop-filter: blur(28px) saturate(200%) brightness(1.1);
+  -webkit-backdrop-filter: blur(28px) saturate(200%) brightness(1.1);
+  border: 1px solid rgba(255,255,255,.35);
+  box-shadow: inset 0 1.5px 1px rgba(255,255,255,.7), inset 0 -1.5px 2px rgba(255,255,255,.16), 0 24px 70px rgba(0,0,0,.55);
+  opacity: 0; pointer-events: none;
+  transform: translate(-50%, -46%) scale(.7);
+  transition: opacity .3s ease, transform .6s cubic-bezier(.34,1.56,.64,1);
+  color: #fff; font-weight: 700; text-align: center;
+}
+.go-toast.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+.go-ring {
+  position: relative; width: 62px; height: 62px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; color: #D8B45A;
+  background: rgba(255,255,255,.1);
+  box-shadow: inset 0 1px 1px rgba(255,255,255,.5);
+}
+.go-ring::before {
+  content: ""; position: absolute; inset: -3px; border-radius: 50%;
+  border: 3px solid transparent; border-top-color: #D8B45A; border-right-color: rgba(216,180,90,.4);
+  animation: goSpin .9s linear infinite;
+}
+@keyframes goSpin { to { transform: rotate(360deg); } }
+.go-bar { width: 100%; height: 5px; border-radius: 99px; background: rgba(255,255,255,.15); overflow: hidden; }
+.go-bar i { display: block; height: 100%; width: 0; border-radius: 99px; background: linear-gradient(90deg, #D8B45A, #FFF0B5); }
+.go-toast.run .go-bar i { animation: goFill var(--go-ms, 1000ms) cubic-bezier(.4,0,.2,1) forwards; }
+@keyframes goFill { to { width: 100%; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .poster-pop, .go-toast { transition-duration: .01s; }
+  .poster-pop.show.float, .go-ring::before { animation: none; }
+}
+
+/* Form fields */
+.field {
+  width: 100%;
+  background: rgba(0,0,0,.3);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: #fff;
+  font-size: 15px;
+}
+.field::placeholder { color: #8b93a3; }
+.field option { color: #000; }
+
+/* Keyboard focus */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 2px solid #D8B45A;
+  outline-offset: 3px;
+}
+
+details > summary { list-style: none; cursor: pointer; }
+details > summary::-webkit-details-marker { display: none; }
+details[open] .faq-icon { transform: rotate(45deg); }
+.faq-icon { transition: transform .25s ease; }
+
+.skip-link {
+  position: absolute; left: -999px; top: 8px; z-index: 200;
+  background: #D8B45A; color: #000; padding: 10px 16px; border-radius: 10px; font-weight: 700;
+}
+.skip-link:focus { left: 8px; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .card, .service-img, .glass-social { transition: none; }
+}
+/* ===================== PREMIUM MOTION LAYER ===================== */
+
+/* Intro loader */
+.preloader {
+  position: fixed; inset: 0; z-index: 1000;
+  background: #080A0F;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;
+  transition: opacity .7s ease, visibility .7s ease;
+  animation: preFallback .01s linear 3.8s forwards; /* safety: never gets stuck */
+}
+.preloader.hide { opacity: 0; visibility: hidden; }
+@keyframes preFallback { to { opacity: 0; visibility: hidden; } }
+.pre-logo { width: 92px; height: 92px; object-fit: contain; animation: prePulse 1.6s ease-in-out infinite; }
+@keyframes prePulse { 0%,100% { transform: scale(1); filter: drop-shadow(0 0 0 rgba(216,180,90,0)); } 50% { transform: scale(1.07); filter: drop-shadow(0 0 22px rgba(216,180,90,.55)); } }
+.pre-name { font-family: 'Playfair Display', serif; letter-spacing: .32em; font-size: 15px; }
+.pre-line { width: 150px; height: 2px; background: rgba(255,255,255,.12); border-radius: 9px; overflow: hidden; }
+.pre-line i { display: block; height: 100%; width: 0; background: linear-gradient(90deg,#D8B45A,#FFF0B5); animation: preFill 1.1s cubic-bezier(.4,0,.2,1) forwards; }
+@keyframes preFill { to { width: 100%; } }
+
+/* Scroll progress bar */
+.scroll-bar {
+  position: fixed; top: 0; left: 0; right: 0; height: 3px; z-index: 120;
+  background: linear-gradient(90deg,#B8862D,#D8B45A,#FFF0B5);
+  transform: scaleX(0); transform-origin: left; pointer-events: none;
+  box-shadow: 0 0 12px rgba(216,180,90,.6);
+}
+
+/* Cursor spotlight (desktop only) */
+.spot {
+  position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: 0; transition: opacity .5s ease;
+  background: radial-gradient(520px circle at var(--sx, 50%) var(--sy, 30%), rgba(216,180,90,.085), transparent 62%);
+}
+.spot.on { opacity: 1; }
+@media (hover: none) { .spot { display: none; } }
+
+/* Hero entrance */
+.js .rise { opacity: 0; }
+.js body.ready .rise {
+  animation: rise 1s cubic-bezier(.2,.8,.2,1) forwards;
+  animation-delay: calc(var(--d, 0) * 1ms);
+}
+@keyframes rise {
+  from { opacity: 0; transform: translateY(30px); filter: blur(10px); }
+  to   { opacity: 1; transform: none; filter: blur(0); }
+}
+
+/* Floating hero orbs */
+.orb { position: absolute; border-radius: 50%; filter: blur(70px); pointer-events: none; opacity: .5; animation: drift 16s ease-in-out infinite alternate; }
+.orb-1 { width: 340px; height: 340px; background: rgba(216,180,90,.30); top: -80px; left: -60px; }
+.orb-2 { width: 300px; height: 300px; background: rgba(125,70,180,.28); bottom: -60px; right: -40px; animation-duration: 20s; animation-delay: -6s; }
+.orb-3 { width: 220px; height: 220px; background: rgba(56,189,248,.16); top: 40%; right: 18%; animation-duration: 24s; animation-delay: -3s; }
+@keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(46px,-38px) scale(1.18); } }
+
+/* Scroll cue */
+.scroll-cue {
+  position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%);
+  width: 26px; height: 42px; border: 2px solid rgba(255,255,255,.35); border-radius: 99px;
+  display: flex; justify-content: center; padding-top: 7px;
+}
+.scroll-cue span { width: 4px; height: 8px; border-radius: 9px; background: #D8B45A; animation: scrollDot 1.8s ease-in-out infinite; }
+@keyframes scrollDot { 0% { opacity: 0; transform: translateY(0); } 30% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
+@media (max-width: 640px), (max-height: 700px) { .scroll-cue { display: none; } }
+
+/* Shimmering gold text */
+.gold-text {
+  background-image: linear-gradient(90deg,#B8862D,#D8B45A,#FFF0B5,#D8B45A,#B8862D);
+  background-size: 200% auto;
+  animation: goldShine 6s linear infinite;
+}
+@keyframes goldShine { to { background-position: 200% center; } }
+
+/* Services marquee */
+.marquee {
+  overflow: hidden; padding: 18px 0;
+  border-top: 1px solid rgba(255,255,255,.08); border-bottom: 1px solid rgba(255,255,255,.08);
+  background: rgba(0,0,0,.25);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-track { display: flex; width: max-content; animation: marquee 40s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-group { display: flex; align-items: center; gap: 2.5rem; padding-right: 2.5rem; font-family: 'Playfair Display', serif; font-size: 19px; color: #c9ced9; white-space: nowrap; }
+.marquee-group b { color: #D8B45A; font-weight: 400; font-size: 14px; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* Header: compact on scroll + nav underline / active state */
+header > div:first-child { transition: height .35s ease; }
+header.scrolled > div:first-child { height: 66px; }
+header nav a { position: relative; padding: 6px 0; transition: color .3s ease; }
+header nav a::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+  background: linear-gradient(90deg,#D8B45A,#FFF0B5);
+  transform: scaleX(0); transform-origin: left; transition: transform .35s ease;
+}
+header nav a:hover::after, header nav a.active::after { transform: scaleX(1); }
+header nav a.active { color: #D8B45A; }
+
+/* Cards: working 3D hover (fixes lift being overridden after reveal) */
+.js .card.reveal.show { transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease, opacity .7s ease; }
+.js .card.reveal.show:hover, .card:hover {
+  transform: perspective(900px) translateY(-8px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
+
+/* Gallery hover */
+#work img { transition: transform .6s cubic-bezier(.2,.8,.2,1), filter .6s ease; }
+#work img:hover { transform: scale(1.04) rotate(-.6deg); filter: brightness(1.1) saturate(1.1); }
+
+/* Button shine */
+.btn-shine { position: relative; overflow: hidden; }
+.btn-shine::after {
+  content: ""; position: absolute; top: 0; left: -70%; width: 40%; height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255,255,255,.6), transparent);
+  transform: skewX(-20deg); transition: left .8s ease; pointer-events: none;
+}
+.btn-shine:hover::after { left: 130%; }
+
+/* Back to top */
+.to-top { display: none; }
+.to-top.on { display: flex; animation: popIn .5s cubic-bezier(.34,1.56,.64,1); }
+@keyframes popIn { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: none; } }
+
+/* FAQ open */
+details[open] > p { animation: fadeDown .4s ease; }
+@keyframes fadeDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .preloader { display: none; }
+  .js .rise { opacity: 1; animation: none !important; }
+  .orb, .marquee-track, .gold-text, .scroll-cue span { animation: none; }
+}
+</style>
+</head>
+
+<body class="text-white font-sans">
+<a href="#services" class="skip-link">Skip to content</a>
+
+
+<div id="scrollBar" class="scroll-bar" aria-hidden="true"></div>
+<div id="spot" class="spot" aria-hidden="true"></div>
+
+<!-- ROTATING TOP ANNOUNCEMENT BAR -->
+<div id="announcementBar"
+     class="text-center px-3 py-2 text-sm sm:text-base"
+     style="background:linear-gradient(120deg,#171923,#242632);border-bottom:1px solid rgba(212,175,90,.25);color:white;font-weight:600;">
+  <div id="announcementText" aria-live="polite" style="transition:opacity .3s ease;">
+    ✨ BOOKINGS OPEN • Weddings • Birthdays • Engagements • Parties • Kannur
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<header class="sticky top-0 z-50 glass">
+  <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+
+    <a href="#" class="flex items-center gap-3" aria-label="Dream Craft Events home">
+      <div class="w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0 flex items-center justify-center overflow-hidden">
+        <img src="logo.png" alt="Dream Craft Events Logo" class="w-full h-full object-contain p-1">
+      </div>
+      <div>
+        <div class="font-display text-xl tracking-wide gold-text">DREAM CRAFT</div>
+        <div class="text-[9px] tracking-[.28em] text-gray-400 uppercase">Event Management</div>
+      </div>
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden md:flex gap-7 text-sm text-gray-300" aria-label="Main">
+      <a class="hover:text-gold transition" href="#services">Services</a>
+      <a class="hover:text-gold transition" href="#work">Our Work</a>
+      <a class="hover:text-gold transition" href="#travels">Tours &amp; Travels</a>
+      <a class="hover:text-gold transition" href="#about">About</a>
+      <a class="hover:text-gold transition" href="#faq">FAQ</a>
+      <a class="hover:text-gold transition" href="#contact">Contact</a>
+    </nav>
+
+    <!-- DESKTOP BUTTONS -->
+    <div class="hidden sm:flex items-center gap-2">
+      <a aria-label="Instagram" target="_blank" rel="noopener"
+         href="https://www.instagram.com/dream_craft_event_management_/"
+         class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:text-pink-400 transition">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a aria-label="Call us" href="tel:+917902919484"
+         class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:text-gold transition">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+      <a target="_blank" rel="noopener"
+         href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20would%20like%20to%20book%20an%20event."
+         class="ml-1 px-5 py-2.5 rounded-full bg-gold text-black font-bold text-sm hover:bg-[#e6c878] transition">
+        <i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp
+      </a>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-xl p-3" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu" class="hidden md:hidden border-t border-white/10 bg-panel px-5 py-5">
+    <div class="flex flex-col gap-1 text-gray-200">
+      <a class="py-3" href="#services">Services</a>
+      <a class="py-3" href="#work">Our Work</a>
+      <a class="py-3" href="#travels">Tours &amp; Travels</a>
+      <a class="py-3" href="#about">About</a>
+      <a class="py-3" href="#faq">FAQ</a>
+      <a class="py-3" href="#contact">Contact</a>
+      <a target="_blank" rel="noopener" href="https://wa.me/917902919484"
+         class="text-center bg-gold text-black rounded-xl py-3 font-bold mt-3">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-bg min-h-[calc(100svh-120px)] flex items-center relative overflow-hidden">
+  <div class="absolute inset-0 opacity-20"
+       style="background-image:radial-gradient(#D8B45A 1px,transparent 1px);background-size:34px 34px;"></div>
+
+  <!-- floating light orbs + scroll cue -->
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+  <div class="orb orb-3" aria-hidden="true"></div>
+  <a href="#services" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+
+  <div class="relative max-w-6xl mx-auto px-5 py-20 sm:py-24 text-center">
+
+    <div class="rise glass inline-flex items-center gap-2 rounded-full px-5 py-3 text-xs font-semibold tracking-widest uppercase text-gold mb-7" style="--d:0">
+      <i class="fa-solid fa-location-dot"></i>
+      Pazhayangadi • Kannur
+    </div>
+
+    <h1 class="rise font-display text-5xl sm:text-7xl lg:text-8xl leading-[1.05] mb-7" style="--d:150">
+      Moments made<br>
+      <span class="gold-text italic">magnificent.</span>
+    </h1>
+
+    <p class="rise max-w-2xl mx-auto text-gray-300 text-base sm:text-lg leading-8 mb-9" style="--d:300">
+      From elegant wedding stages to unforgettable birthday setups,
+      custom cakes, hampers, photography and sound —
+      we craft celebrations people remember.
+    </p>
+
+    <div class="rise flex flex-col sm:flex-row justify-center gap-3" style="--d:450">
+      <a target="_blank" rel="noopener"
+         href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20plan%20an%20event."
+         class="px-8 py-4 rounded-full bg-gold text-black font-extrabold hover:bg-[#e6c878] hover:scale-[1.03] transition">
+        <i class="fa-brands fa-whatsapp mr-2"></i> Plan My Event
+      </a>
+      <a href="#services"
+         class="glass px-8 py-4 rounded-full text-white font-semibold hover:scale-[1.03] transition">
+        Explore Services <i class="fa-solid fa-arrow-down ml-2"></i>
+      </a>
+    </div>
+
+    <!-- QUICK SERVICES -->
+    <div class="rise max-w-4xl mx-auto mt-16 grid grid-cols-2 md:grid-cols-4 gap-3" style="--d:600">
+      <div class="glass rounded-3xl p-5">
+        <div class="text-gold text-2xl mb-1"><i class="fa-solid fa-heart"></i></div>
+        <div class="font-bold">Weddings</div>
+        <div class="text-xs text-gray-400 mt-1">Elegant setups</div>
+      </div>
+      <div class="glass rounded-3xl p-5">
+        <div class="text-gold text-2xl mb-1"><i class="fa-solid fa-cake-candles"></i></div>
+        <div class="font-bold">Birthdays</div>
+        <div class="text-xs text-gray-400 mt-1">Creative themes</div>
+      </div>
+      <div class="glass rounded-3xl p-5">
+        <div class="text-gold text-2xl mb-1"><i class="fa-solid fa-camera"></i></div>
+        <div class="font-bold">Photography</div>
+        <div class="text-xs text-gray-400 mt-1">Capture memories</div>
+      </div>
+      <div class="glass rounded-3xl p-5">
+        <div class="text-gold text-2xl mb-1"><i class="fa-solid fa-music"></i></div>
+        <div class="font-bold">Sound &amp; Lights</div>
+        <div class="text-xs text-gray-400 mt-1">Complete production</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES TICKER -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>Weddings</span><b>✦</b><span>Engagements</span><b>✦</b><span>Birthdays</span><b>✦</b><span>Designer Cakes</span><b>✦</b><span>Custom Hampers</span><b>✦</b><span>Photo &amp; Video</span><b>✦</b><span>Lights &amp; Sounds</span><b>✦</b><span>Wedding Oppana</span><b>✦</b><span>Mehendi</span><b>✦</b><span>Tours &amp; Travels</span><b>✦</b>
+    </div>
+    <div class="marquee-group">
+      <span>Weddings</span><b>✦</b><span>Engagements</span><b>✦</b><span>Birthdays</span><b>✦</b><span>Designer Cakes</span><b>✦</b><span>Custom Hampers</span><b>✦</b><span>Photo &amp; Video</span><b>✦</b><span>Lights &amp; Sounds</span><b>✦</b><span>Wedding Oppana</span><b>✦</b><span>Mehendi</span><b>✦</b><span>Tours &amp; Travels</span><b>✦</b>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="py-20 sm:py-24 bg-[#0B0E15]">
+  <div class="max-w-7xl mx-auto px-5">
+
+    <div class="max-w-2xl mb-14 reveal">
+      <p class="text-gold uppercase tracking-[.25em] text-xs font-bold">What we create</p>
+      <h2 class="font-display text-4xl sm:text-5xl mt-3">
+        One team. <span class="gold-text">Every detail.</span>
+      </h2>
+      <p class="text-gray-300 mt-4 leading-7">
+        Choose a single service or let us coordinate the complete celebration.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      <!-- 1 -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80"
+               alt="Wedding stage decoration" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">01 • Decor</p>
+          <h3 class="font-display text-2xl mt-2">Wedding &amp; Engagement</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Stage styling, floral backdrops, entrance concepts, seating and venue decor.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Wedding%20%26%20Engagement%20decor."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80"
+               alt="Birthday balloon decoration" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">02 • Celebrations</p>
+          <h3 class="font-display text-2xl mt-2">Birthday &amp; Balloon</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Theme parties, balloon arches, custom backdrops, props and cake table styling.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Birthday%20%26%20Balloon%20decor."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80"
+               alt="Stage lighting and sound" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">03 • Production</p>
+          <h3 class="font-display text-2xl mt-2">Lights &amp; Sounds</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            PA systems, truss stages, dynamic lighting and event sound production.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Lights%20%26%20Sounds."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=800&q=80"
+               alt="Chocolate gift hamper" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">04 • Gifts</p>
+          <h3 class="font-display text-2xl mt-2">Custom Hampers</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Personalized chocolate hampers, ribbons, cards and presentation for special occasions.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Custom%20Hampers."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 5 -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+               alt="Designer celebration cake" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">05 • Cakes</p>
+          <h3 class="font-display text-2xl mt-2">Designer Cakes</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Theme cakes, chocolate cakes, berry cakes and celebration desserts.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Designer%20Cakes."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 6 -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80"
+               alt="Wedding photography" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">06 • Memories</p>
+          <h3 class="font-display text-2xl mt-2">Photo &amp; Video</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Candid photography, cinematic videos, highlight reels and event coverage.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Photo%20%26%20Video."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 7 - OPPANA (file name has a space, so it is URL-encoded) -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="Oppana%20image.jpg"
+               alt="Wedding Oppana" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">07 • Traditional</p>
+          <h3 class="font-display text-2xl mt-2">Wedding Oppana</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Add a traditional Kerala touch to your wedding with beautiful Oppana performances.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Wedding%20Oppana."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 8 - MEHENDI -->
+      <article class="card reveal border border-white/10 rounded-3xl overflow-hidden bg-panel flex flex-col">
+        <div class="h-48 overflow-hidden">
+          <img class="service-img w-full h-full object-cover"
+               src="https://images.unsplash.com/photo-1610173826608-bd1d5be9a7d8?auto=format&fit=crop&w=800&q=80"
+               alt="Mehendi Design" loading="lazy" width="800" height="600">
+        </div>
+        <div class="p-6 flex flex-col flex-1">
+          <p class="text-gold text-xs uppercase tracking-widest font-bold">08 • Bridal Beauty</p>
+          <h3 class="font-display text-2xl mt-2">Mehendi Design</h3>
+          <p class="text-gray-300 text-sm leading-6 mt-2 flex-1">
+            Beautiful bridal, Arabic and traditional Mehendi designs for weddings and special occasions.
+          </p>
+          <a target="_blank" rel="noopener"
+             href="https://wa.me/917902919484?text=Hi%20Dream%20Craft%20Events,%20I%20want%20to%20enquire%20about%20Mehendi%20Design."
+             class="mt-4 text-sm font-bold text-gold hover:underline">
+            Enquire <i class="fa-solid fa-arrow-right ml-1 text-xs"></i>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS + ENQUIRY FORM -->
+<section id="enquiry" class="py-20 px-5">
+  <div class="max-w-6xl mx-auto rounded-[2rem] overflow-hidden relative border border-gold/20 bg-gradient-to-br from-[#18150F] via-panel to-[#0E1118] p-7 sm:p-14">
+
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-80 h-80 bg-gold/15 blur-[90px] rounded-full pointer-events-none"></div>
+
+    <div class="relative grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Left -->
+      <div class="reveal">
+        <p class="text-gold text-xs uppercase tracking-[.3em] font-bold">Your idea. Our craft.</p>
+
+        <h2 class="font-display text-4xl sm:text-5xl mt-4 leading-tight">
+          Let's make your next
+          <span class="gold-text italic">celebration special.</span>
+        </h2>
+
+        <p class="text-gray-300 mt-5 leading-7">
+          Tell us your date, event type and vision. We'll help you plan the right setup.
+        </p>
+
+        <ol class="mt-8 space-y-5">
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center flex-shrink-0">1</span>
+            <div>
+              <div class="font-bold">Share your idea</div>
+              <div class="text-sm text-gray-400 mt-1">Send your date, venue and the kind of event.</div>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center flex-shrink-0">2</span>
+            <div>
+              <div class="font-bold">Get a plan &amp; quote</div>
+              <div class="text-sm text-gray-400 mt-1">We discuss themes, services and budget with you.</div>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="w-10 h-10 rounded-full bg-gold/15 text-gold font-bold flex items-center justify-center flex-shrink-0">3</span>
+            <div>
+              <div class="font-bold">We set it up</div>
+              <div class="text-sm text-gray-400 mt-1">Our team handles the setup so you can enjoy the day.</div>
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <!-- Form -->
+      <form id="enquiryForm" class="reveal bg-black/25 border border-white/10 rounded-3xl p-6 sm:p-8 space-y-4" novalidate>
+        <h3 class="font-display text-2xl">Quick enquiry</h3>
+        <p class="text-sm text-gray-400 -mt-2">Opens WhatsApp with your details filled in.</p>
+
+        <div>
+          <label for="f-name" class="text-xs text-gray-400 block mb-1.5">Your name</label>
+          <input id="f-name" name="name" type="text" class="field" placeholder="Your name" autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="f-event" class="text-xs text-gray-400 block mb-1.5">Event type</label>
+          <select id="f-event" name="event" class="field" required>
+            <option value="">Select event type</option>
+            <option>Wedding</option>
+            <option>Engagement</option>
+            <option>Birthday</option>
+            <option>Party / Other celebration</option>
+            <option>Cakes / Hampers only</option>
+            <option>Photo &amp; Video only</option>
+            <option>Lights &amp; Sounds only</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="f-date" class="text-xs text-gray-400 block mb-1.5">Event date</label>
+          <input id="f-date" name="date" type="date" class="field" style="color-scheme:dark;">
+        </div>
+
+        <div>
+          <label for="f-msg" class="text-xs text-gray-400 block mb-1.5">Details (optional)</label>
+          <textarea id="f-msg" name="msg" rows="3" class="field" placeholder="Venue, theme, number of guests..."></textarea>
+        </div>
+
+        <p id="formError" class="text-sm text-red-400 hidden" role="alert">Please enter your name and select an event type.</p>
+
+        <button type="submit"
+                class="w-full inline-flex items-center justify-center gap-2 bg-gold text-black font-extrabold px-8 py-4 rounded-full hover:bg-[#e6c878] transition">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          Send on WhatsApp
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- INSTAGRAM -->
+<section id="work" class="py-20 sm:py-24 bg-[#0B0E15]">
+  <div class="max-w-7xl mx-auto px-5">
+
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-10 reveal">
+      <div>
+        <p class="text-pink-400 text-xs uppercase tracking-[.25em] font-bold">
+          <i class="fa-brands fa-instagram mr-1"></i> Instagram
+        </p>
+        <h2 class="font-display text-4xl mt-2">Follow the journey</h2>
+      </div>
+
+      <a target="_blank" rel="noopener"
+         href="https://www.instagram.com/dream_craft_event_management_/"
+         class="text-sm text-gold font-bold hover:underline">
+        @dream_craft_event_management_ ↗
+      </a>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img class="rounded-2xl aspect-square object-cover reveal"
+           src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=600&q=80"
+           alt="Event decoration" loading="lazy" width="600" height="600">
+      <img class="rounded-2xl aspect-square object-cover reveal"
+           src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=600&q=80"
+           alt="Wedding setup" loading="lazy" width="600" height="600">
+      <img class="rounded-2xl aspect-square object-cover reveal"
+           src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=600&q=80"
+           alt="Wedding celebration" loading="lazy" width="600" height="600">
+      <img class="rounded-2xl aspect-square object-cover reveal"
+           src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80"
+           alt="Party celebration" loading="lazy" width="600" height="600"
+           onerror="this.remove()">
+    </div>
+
+    <p class="text-xs text-gray-500 mt-5">
+      Tip: replace these sample photos with your own event photos for a more authentic look.
+    </p>
+  </div>
+</section>
+
+<!-- DREAM LOVE HOLIDAYS - TOURS & TRAVELS -->
+<section id="travels" class="py-20 sm:py-24">
+  <div class="max-w-7xl mx-auto px-5">
+
+    <div class="max-w-3xl mx-auto text-center mb-12 reveal">
+      <p class="text-sky-400 uppercase tracking-[.25em] text-xs font-bold">
+        <i class="fa-solid fa-plane mr-2"></i>
+        Explore • Experience • Create Memories
+      </p>
+
+      <h2 class="font-display text-4xl sm:text-5xl mt-4">
+        Dream Love <span class="text-sky-400">Holidays</span>
+      </h2>
+
+      <p class="text-gray-300 mt-4 leading-7">
+        Your next journey starts here. Explore comfortable travel,
+        customized tour packages, family trips and group tours.
+        Travel more, worry less, and create unforgettable memories.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <div class="glass reveal rounded-3xl p-6">
+        <i class="fa-solid fa-van-shuttle text-sky-400 text-3xl"></i>
+        <h3 class="font-bold text-lg mt-4">Comfortable Vehicles</h3>
+        <p class="text-gray-300 text-sm leading-6 mt-2">Comfortable travel for your journeys and outings.</p>
+      </div>
+
+      <div class="glass reveal rounded-3xl p-6">
+        <i class="fa-solid fa-shield-halved text-sky-400 text-3xl"></i>
+        <h3 class="font-bold text-lg mt-4">Safe &amp; Reliable</h3>
+        <p class="text-gray-300 text-sm leading-6 mt-2">Plan your journey with care and confidence.</p>
+      </div>
+
+      <div class="glass reveal rounded-3xl p-6">
+        <i class="fa-solid fa-map-location-dot text-sky-400 text-3xl"></i>
+        <h3 class="font-bold text-lg mt-4">Custom Tour Packages</h3>
+        <p class="text-gray-300 text-sm leading-6 mt-2">Discuss your destinations and travel plans with us.</p>
+      </div>
+
+      <div class="glass reveal rounded-3xl p-6">
+        <i class="fa-solid fa-people-group text-sky-400 text-3xl"></i>
+        <h3 class="font-bold text-lg mt-4">Family &amp; Group Tours</h3>
+        <p class="text-gray-300 text-sm leading-6 mt-2">Plan memorable trips with family and friends.</p>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-10">
+      <p class="text-gray-300 mb-5">Ready for your next journey?</p>
+
+      <a href="https://wa.me/917902919484?text=Hi%20Dream%20Love%20Holidays%2C%20I%20would%20like%20to%20enquire%20about%20a%20tour."
+         target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center justify-center gap-3 rounded-full bg-sky-500 hover:bg-sky-400 text-black font-bold px-7 py-4 transition">
+        <i class="fa-brands fa-whatsapp text-xl"></i>
+        Enquire About a Trip
+      </a>
+
+      <div class="mt-5">
+        <a href="https://www.instagram.com/dream_love_holidays/"
+           target="_blank" rel="noopener noreferrer"
+           class="text-pink-400 hover:text-pink-300">
+          <i class="fa-brands fa-instagram mr-2"></i>@dream_love_holidays
+        </a>
+      </div>
+
+      <p class="text-gray-400 text-sm mt-4">
+        Call us: <a href="tel:+917902919484" class="text-gray-200 hover:text-sky-400">79029 19484</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ABOUT + CONTACT -->
+<section id="about" class="py-20 sm:py-24 bg-[#0B0E15]">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-start">
+
+    <!-- ABOUT -->
+    <div class="reveal">
+      <p class="text-gold text-xs uppercase tracking-[.25em] font-bold">About Dream Craft</p>
+
+      <h2 class="font-display text-4xl sm:text-5xl mt-3">
+        Local service.<br>
+        <span class="gold-text">Premium presentation.</span>
+      </h2>
+
+      <p class="text-gray-300 leading-7 mt-6">
+        Based in Pazhayangadi, Kannur, Dream Craft Events brings together decoration,
+        entertainment, gifting, cakes, photography and event support under one roof.
+      </p>
+
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <div class="border border-white/10 rounded-2xl p-5 bg-panel">
+          <i class="fa-regular fa-clock text-gold mb-3"></i>
+          <div class="font-bold">10 AM – 10 PM</div>
+          <div class="text-xs text-gray-400 mt-1">Daily</div>
+        </div>
+
+        <div class="border border-white/10 rounded-2xl p-5 bg-panel">
+          <i class="fa-solid fa-location-dot text-gold mb-3"></i>
+          <div class="font-bold">Pazhayangadi</div>
+          <div class="text-xs text-gray-400 mt-1">Kannur, Kerala</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div id="contact" class="reveal scroll-mt-24">
+      <div class="rounded-3xl border border-white/10 bg-panel p-7 sm:p-9">
+
+        <p class="text-gold text-xs uppercase tracking-[.25em] font-bold">Contact</p>
+        <h3 class="font-display text-3xl mt-2 mb-7">Start planning today</h3>
+
+        <div class="space-y-3">
+
+          <a href="tel:+917902919484"
+             class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-gold/40 transition">
+            <span class="w-11 h-11 rounded-xl bg-gold/10 text-gold flex items-center justify-center">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span>
+              <small class="text-gray-400 block">Call</small>
+              <b>+91 79029 19484</b>
+            </span>
+          </a>
+
+          <a href="tel:+919562046506"
+             class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-gold/40 transition">
+            <span class="w-11 h-11 rounded-xl bg-gold/10 text-gold flex items-center justify-center">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span>
+              <small class="text-gray-400 block">Alternate</small>
+              <b>+91 95620 46506</b>
+            </span>
+          </a>
+
+          <a target="_blank" rel="noopener" href="https://wa.me/917902919484"
+             class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-emerald-400/40 transition">
+            <span class="w-11 h-11 rounded-xl bg-emerald-400/10 text-emerald-400 flex items-center justify-center">
+              <i class="fa-brands fa-whatsapp"></i>
+            </span>
+            <span>
+              <small class="text-gray-400 block">WhatsApp</small>
+              <b>Chat with Dream Craft</b>
+            </span>
+          </a>
+
+          <a href="mailto:dreamcrafteventskannur@gmail.com"
+             class="flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-gold/40 transition">
+            <span class="w-11 h-11 rounded-xl bg-gold/10 text-gold flex items-center justify-center flex-shrink-0">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <span>
+              <small class="text-gray-400 block">Email</small>
+              <b class="break-all">dreamcrafteventskannur@gmail.com</b>
+            </span>
+          </a>
+
+        </div>
+
+        <a target="_blank" rel="noopener" href="https://maps.app.goo.gl/djH7cYEaoNJGghNJ6"
+           class="mt-5 block text-center border border-gold/30 text-gold rounded-xl py-3 font-bold text-sm hover:bg-gold hover:text-black transition">
+          <i class="fa-solid fa-diamond-turn-right mr-1"></i> Get Directions
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-20 sm:py-24">
+  <div class="max-w-3xl mx-auto px-5">
+
+    <div class="text-center mb-10 reveal">
+      <p class="text-gold text-xs uppercase tracking-[.25em] font-bold">Good to know</p>
+      <h2 class="font-display text-4xl mt-3">Frequently asked questions</h2>
+    </div>
+
+    <div class="space-y-3 reveal">
+
+      <details class="border border-white/10 rounded-2xl bg-panel p-5">
+        <summary class="flex items-center justify-between gap-4 font-bold">
+          How do I book an event?
+          <i class="fa-solid fa-plus text-gold faq-icon"></i>
+        </summary>
+        <p class="text-gray-300 text-sm leading-7 mt-3">
+          Message us on WhatsApp or call with your event date, type and venue.
+          We will discuss the setup and share a quotation.
+        </p>
+      </details>
+
+      <details class="border border-white/10 rounded-2xl bg-panel p-5">
+        <summary class="flex items-center justify-between gap-4 font-bold">
+          Can I book just one service?
+          <i class="fa-solid fa-plus text-gold faq-icon"></i>
+        </summary>
+        <p class="text-gray-300 text-sm leading-7 mt-3">
+          Yes. You can choose a single service such as cakes, hampers, photography or
+          lights and sound, or let us coordinate the complete celebration.
+        </p>
+      </details>
+
+      <details class="border border-white/10 rounded-2xl bg-panel p-5">
+        <summary class="flex items-center justify-between gap-4 font-bold">
+          What are your working hours?
+          <i class="fa-solid fa-plus text-gold faq-icon"></i>
+        </summary>
+        <p class="text-gray-300 text-sm leading-7 mt-3">
+          We are available daily from 10 AM to 10 PM at Pazhayangadi, Kannur.
+        </p>
+      </details>
+
+      <details class="border border-white/10 rounded-2xl bg-panel p-5">
+        <summary class="flex items-center justify-between gap-4 font-bold">
+          Do you also arrange tours and travel?
+          <i class="fa-solid fa-plus text-gold faq-icon"></i>
+        </summary>
+        <p class="text-gray-300 text-sm leading-7 mt-3">
+          Yes, through Dream Love Holidays. Contact us for tour packages, family trips and group tours.
+        </p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="border-t border-white/10 py-9 bg-black/30">
+  <div class="max-w-7xl mx-auto px-5 flex flex-col sm:flex-row justify-between items-center gap-5 text-xs text-gray-400">
+
+    <div class="text-center sm:text-left">
+      © 2026 Dream Craft Events • Pazhayangadi, Kannur
+    </div>
+
+    <a target="_blank" rel="noopener noreferrer"
+       href="https://www.instagram.com/dream_craft_event_management_/"
+       class="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white font-bold text-sm hover:scale-105 transition">
+      <i class="fa-brands fa-instagram text-lg"></i>
+      Follow us on Instagram
+    </a>
+
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="fixed right-4 bottom-6 z-[100] flex flex-col gap-3">
+
+  <a href="#" id="toTop" class="glass-social to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <a href="#travels" aria-label="Tours and Travels" title="Tours & Travels"
+     class="glass-social" style="color:#38bdf8;">
+    <i class="fa-solid fa-plane"></i>
+  </a>
+
+  <a href="https://wa.me/917902919484" target="_blank" rel="noopener noreferrer"
+     aria-label="WhatsApp" title="WhatsApp" class="glass-social" style="color:#34d399;">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <a href="https://www.instagram.com/dream_craft_event_management_/" target="_blank" rel="noopener noreferrer"
+     aria-label="Instagram" title="Instagram" class="glass-social">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+
+</div>
+
+<!-- TRAVEL POSTER POPUP (bottom-left, shows once per visit) -->
+<div id="travelPosterPopup" class="poster-pop" role="dialog" aria-label="Dream Love Holidays">
+  <button id="closePoster" class="poster-close" aria-label="Close poster">&times;</button>
+  <a href="#travels" id="posterLink">
+    <img id="posterImg" src="dream-love-poster.jpg" alt="Dream Love Holidays">
+  </a>
+  <!-- Shown automatically if the poster image can't be loaded -->
+  <a href="#travels" id="posterFallback" class="poster-fallback" hidden>
+    <i class="fa-solid fa-plane" style="font-size:30px;color:#38bdf8;"></i>
+    <b style="font-family:'Playfair Display',serif;font-size:20px;">Dream Love Holidays</b>
+    <span style="font-size:12px;opacity:.85;">Tour Packages • Travel Bookings</span>
+    <span style="margin-top:4px;padding:8px 18px;border-radius:99px;background:#38bdf8;color:#000;font-weight:700;font-size:13px;">Explore Tours</span>
+  </a>
+</div>
+
+<!-- REDIRECT ANIMATION -->
+<div id="goVeil" class="go-veil"></div>
+<div id="goToast" class="go-toast" role="status" aria-live="polite">
+  <span class="go-ring"><i id="goIcon" class="fa-solid fa-phone"></i></span>
+  <span id="goText" style="font-size:17px;">Opening…</span>
+  <span class="go-bar"><i></i></span>
+</div>
+
+<script>
+// ---------- Announcement bar ----------
+(function () {
+  const messages = [
+    "✨ BOOKINGS OPEN • Weddings • Birthdays • Engagements • Parties • Kannur",
+    "✈️ DREAM LOVE HOLIDAYS • Tour Packages • Travel Bookings"
+  ];
+  const el = document.getElementById('announcementText');
+  let i = 0;
+  setInterval(() => {
+    i = (i + 1) % messages.length;
+    el.style.opacity = '0';
+    setTimeout(() => { el.textContent = messages[i]; el.style.opacity = '1'; }, 300);
+  }, 4000);
+})();
+
+// ---------- Mobile menu ----------
+(function () {
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('mobileMenu');
+  function setOpen(open) {
+    menu.classList.toggle('hidden', !open);
+    btn.setAttribute('aria-expanded', String(open));
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    btn.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  }
+  btn.addEventListener('click', () => setOpen(menu.classList.contains('hidden')));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+})();
+
+// ---------- Scroll reveal ----------
+(function () {
+  const items = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    items.forEach(el => el.classList.add('show'));
+    return;
+  }
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        // stagger siblings so groups of cards cascade in
+        const sibs = Array.from(el.parentElement.children).filter(c => c.classList.contains('reveal'));
+        el.style.transitionDelay = (sibs.indexOf(el) % 4) * 110 + 'ms';
+        el.classList.add('show');
+        setTimeout(() => { el.style.transitionDelay = '0ms'; }, 1400);
+        observer.unobserve(el);
+      }
+    });
+  }, { threshold: 0.12 });
+  items.forEach(el => observer.observe(el));
+})();
+
+// ---------- Enquiry form -> WhatsApp ----------
+(function () {
+  const form = document.getElementById('enquiryForm');
+  const error = document.getElementById('formError');
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = form.name.value.trim();
+    const event = form.event.value.trim();
+    const date = form.date.value;
+    const msg = form.msg.value.trim();
+
+    if (!name || !event) {
+      error.classList.remove('hidden');
+      return;
+    }
+    error.classList.add('hidden');
+
+    let text = "Hi Dream Craft Events, I would like to enquire.\n" +
+               "Name: " + name + "\n" +
+               "Event: " + event;
+    if (date) text += "\nDate: " + date;
+    if (msg) text += "\nDetails: " + msg;
+
+    window.goTo("https://wa.me/917902919484?text=" + encodeURIComponent(text), true);
+  });
+})();
+
+// ---------- Travel poster popup (appears right away) ----------
+(function () {
+  const popup = document.getElementById('travelPosterPopup');
+  const img = document.getElementById('posterImg');
+
+  // If the poster image is missing, show a text ad instead (never a blank popup)
+  const link = document.getElementById('posterLink');
+  const fallback = document.getElementById('posterFallback');
+  function useFallback() {
+    link.hidden = true;
+    fallback.hidden = false;
+  }
+  img.addEventListener('error', useFallback);
+  if (img.complete && img.naturalWidth === 0) useFallback();
+
+  function close() {
+    popup.classList.remove('show', 'float');
+  }
+  document.getElementById('closePoster').addEventListener('click', close);
+  link.addEventListener('click', close);
+  fallback.addEventListener('click', close);
+
+  function open() {
+    popup.classList.add('show');
+    setTimeout(() => popup.classList.add('float'), 900);
+  }
+  // short delay so the entrance animation is visible
+  setTimeout(open, 300);
+})();
+
+// ---------- Liquid glass: light follows finger / cursor ----------
+document.addEventListener('pointermove', (e) => {
+  const t = e.target.closest('.glass, .liquid-row, .glass-social');
+  if (!t) return;
+  const r = t.getBoundingClientRect();
+  t.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+  t.style.setProperty('--my', (e.clientY - r.top) + 'px');
+});
+document.querySelectorAll('#contact a').forEach(a => a.classList.add('liquid-row'));
+
+// ---------- Smooth redirect animation for contact links ----------
+(function () {
+  const veil = document.getElementById('goVeil');
+  const toast = document.getElementById('goToast');
+  const icon = document.getElementById('goIcon');
+  const text = document.getElementById('goText');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const DURATION = reduce ? 200 : 1000;
+  let busy = false;
+
+  function describe(url) {
+    if (url.indexOf('tel:') === 0) {
+      let n = decodeURIComponent(url.slice(4));
+      if (/^\+91\d{10}$/.test(n)) n = '+91 ' + n.slice(3, 8) + ' ' + n.slice(8);
+      return ['fa-solid fa-phone', 'Calling ' + n];
+    }
+    if (url.indexOf('mailto:') === 0) return ['fa-solid fa-envelope', 'Opening Mail'];
+    if (url.indexOf('wa.me') > -1) return ['fa-brands fa-whatsapp', 'Opening WhatsApp'];
+    if (url.indexOf('instagram.com') > -1) return ['fa-brands fa-instagram', 'Opening Instagram'];
+    if (url.indexOf('maps') > -1) return ['fa-solid fa-location-dot', 'Opening Maps'];
+    return ['fa-solid fa-arrow-up-right-from-square', 'Opening…'];
+  }
+
+  window.goTo = function (url, newTab) {
+    if (busy) return;
+    busy = true;
+
+    const d = describe(url);
+    icon.className = d[0];
+    text.textContent = d[1];
+    toast.style.setProperty('--go-ms', DURATION + 'ms');
+
+    veil.classList.add('show');
+    toast.classList.remove('run');
+    void toast.offsetWidth; // restart the progress animation
+    toast.classList.add('show', 'run');
+
+    setTimeout(() => {
+      if (newTab) {
+        const w = window.open(url, '_blank');
+        if (w) { try { w.opener = null; } catch (e) {} }
+        else { window.location.href = url; } // popup blocked -> same tab
+      } else {
+        window.location.href = url;
+      }
+      // hide the overlay shortly after (the user comes back to a clean page)
+      setTimeout(() => {
+        veil.classList.remove('show');
+        toast.classList.remove('show', 'run');
+        busy = false;
+      }, 700);
+    }, DURATION);
+  };
+
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href]');
+    if (!a) return;
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+    const href = a.getAttribute('href');
+    if (!/^(tel:|mailto:|https?:\/\/(wa\.me|www\.instagram\.com|maps\.app\.goo\.gl))/.test(href)) return;
+    e.preventDefault();
+    window.goTo(href, a.target === '_blank');
+  });
+})();
+</script>
+
+<script>
+// ---------- Start hero animation immediately (no loading screen) ----------
+document.body.classList.add('ready');
+
+// ---------- Scroll: progress bar, compact header, back-to-top ----------
+(function () {
+  const bar = document.getElementById('scrollBar');
+  const header = document.querySelector('header');
+  const toTop = document.getElementById('toTop');
+  let ticking = false;
+
+  function update() {
+    const y = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.transform = 'scaleX(' + (max > 0 ? y / max : 0) + ')';
+    header.classList.toggle('scrolled', y > 40);
+    toTop.classList.toggle('on', y > 700);
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+
+// ---------- Highlight current section in the menu ----------
+(function () {
+  const links = Array.from(document.querySelectorAll('header nav a[href^="#"]'));
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      links.forEach(l => l.classList.remove('active'));
+      const a = map.get(e.target.id);
+      if (a) a.classList.add('active');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  map.forEach((_, id) => { const s = document.getElementById(id); if (s) io.observe(s); });
+})();
+
+// ---------- Desktop-only polish: 3D card tilt + cursor spotlight ----------
+(function () {
+  const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!fine || reduce) return;
+
+  document.querySelectorAll('.card').forEach(c => {
+    c.addEventListener('pointermove', (e) => {
+      const r = c.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      c.style.setProperty('--ry', (x * 7) + 'deg');
+      c.style.setProperty('--rx', (-y * 7) + 'deg');
+    });
+    c.addEventListener('pointerleave', () => {
+      c.style.setProperty('--rx', '0deg');
+      c.style.setProperty('--ry', '0deg');
+    });
+  });
+
+  const spot = document.getElementById('spot');
+  let raf = 0;
+  window.addEventListener('pointermove', (e) => {
+    spot.classList.add('on');
+    if (raf) return;
+    raf = requestAnimationFrame(() => {
+      spot.style.setProperty('--sx', e.clientX + 'px');
+      spot.style.setProperty('--sy', e.clientY + 'px');
+      raf = 0;
+    });
+  }, { passive: true });
+})();
+
+// ---------- Shine sweep on main buttons ----------
+document.querySelectorAll('a.bg-gold, a.bg-sky-500, button[type="submit"]').forEach(b => b.classList.add('btn-shine'));
+</script>
+</body>
+</html>
